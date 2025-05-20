@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cleaner id="nvidia_custom">
+    <label>NVIDIA Custom</label>
+    <description>Cleans various NVIDIA cache files, logs, and installer remnants.</description>
+    <version>0.1.0</version>
+    <icon>nvidia.png</icon> <!-- Assuming a generic icon name, actual icon to be added later -->
+
+    <option id="nvidia_cache">
+        <label>NVIDIA Cache Files</label>
+        <description>Removes NVIDIA's graphics driver cache (GLCache, ComputeCache, DXCache), shader cache, and other temporary cache files.</description>
+        <action command="delete" path="%LocalAppData%\NVIDIA\GLCache" recurse="true"/>
+        <action command="delete" path="%ProgramData%\NVIDIA Corporation\Downloader\latest" recurse="true"/> <!-- Installer files -->
+        <action command="delete" path="%Public%\Documents\NVIDIA Corporation\NVIDIA Web Helper\NvContainer\Temp" recurse="true"/>
+        <action command="delete" path="%UserProfile%\AppData\Local\NVIDIA Corporation\NVIDIA GeForce Experience\CefCache" recurse="true" />
+        <action command="delete" path="%UserProfile%\AppData\Local\NVIDIA Corporation\NvBackend\ApplicationOntology" recurse="true" />
+        <action command="delete" path="%UserProfile%\AppData\Local\NVIDIA Corporation\NvBackend\Packages" recurse="true" />
+        <action command="delete" path="%UserProfile%\AppData\Local\NVIDIA\DXCache" recurse="true" />
+        <action command="delete" path="%UserProfile%\AppData\Local\NVIDIA\ComputeCache" recurse="true" />
+        <action command="delete" path="%UserProfile%\AppData\Roaming\NVIDIA\GeForceNOW\sharedstorage.json" />
+        <action command="delete" path="%UserProfile%\AppData\Roaming\NVIDIA\GeForceNOW\CEF\cache" recurse="true" />
+        <action command="delete" path="%UserProfile%\AppData\Local\Temp\NVIDIA Corporation\*" recurse="true"/>
+        <action command="delete" path="%WinDir%\Temp\NVIDIA_*" recurse="true"/>
+    </option>
+
+    <option id="nvidia_logs">
+        <label>NVIDIA Log Files</label>
+        <description>Deletes NVIDIA log files from various locations.</description>
+        <action command="delete" path="%ProgramData%\NVIDIA Corporation\*\*.log" recurse="true"/>
+        <action command="delete" path="%ProgramData%\NVIDIA Corporation\*\*.txt" recurse="true"/> <!-- Some logs are txt -->
+        <action command="delete" path="%UserProfile%\AppData\Local\NVIDIA Corporation\NVSMI\nvml_event.log"/>
+        <action command="delete" path="%UserProfile%\AppData\Local\NVIDIA Corporation\Geforce Experience\LOGS" recurse="true"/>
+        <action command="delete" path="%UserProfile%\AppData\Local\NVIDIA Corporation\NVIDIA Share\debug.log"/>
+    </option>
+
+    <option id="nvidia_installer_remnants">
+        <label>NVIDIA Installer Remnants</label>
+        <description>Removes leftover NVIDIA installer files and folders.</description>
+        <action command="delete" path="C:\NVIDIA\DisplayDriver" recurse="true"/> <!-- Common but not always present, user might have changed this -->
+        <action command="delete" path="%SystemDrive%\NVIDIA" recurse="true"/> <!-- Another common location for extracted driver files -->
+        <action command="delete" path="%ProgramFiles%\NVIDIA Corporation\Installer2" recurse="true"/>
+        <action command="delete" path="%ProgramFiles(x86)%\NVIDIA Corporation\Installer2" recurse="true"/>
+    </option>
+
+    <!-- More specific NVIDIA application cleanups can be added as separate options or cleaners -->
+    <!-- e.g., GeForce Experience specific caches not covered above, NVIDIA Broadcast, etc. -->
+
+</cleaner>
