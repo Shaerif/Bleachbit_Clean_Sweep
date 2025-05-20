@@ -1,12 +1,12 @@
-# Changelog
+# Changelog 📜
 
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
- 
+
 ## [Unreleased] - 2025-05-20
-### Added
+### Added ✨
 - Replaced `deploy_cleaners.ps1` with `deploy_cleaners.py` for cross-platform compatibility.
 - Added `cleaner_manager_gui.py` for managing custom cleaners.
 - Created `requirements.txt` for GUI tool dependencies.

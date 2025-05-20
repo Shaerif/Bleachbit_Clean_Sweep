@@ -1,8 +1,8 @@
-# Project Roadmap
+# Project Roadmap 🗺️
 
 This document outlines the planned features and improvements for the Bleachbit Clean Sweep project.
 
-## Short-Term Goals (Next 1-3 Months)
+## Short-Term Goals (Next 1-3 Months) ⏳
 
 *   **Initial Cleaner Set:**
     *   Develop and test cleaners for popular NVIDIA software components.

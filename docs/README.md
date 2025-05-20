@@ -1,12 +1,12 @@
-# Bleachbit Clean Sweep
+# Bleachbit Clean Sweep 🚀
 
-## Overview
+## Overview 📄
 
 Bleachbit Clean Sweep is a project dedicated to providing custom cleaner definitions (XML files) for BleachBit, a powerful open-source system cleaner. This project aims to extend BleachBit's cleaning capabilities by targeting specific applications and system areas not covered by default cleaners.
 
 Our goal is to help users reclaim disk space, protect their privacy, and maintain system performance by thoroughly removing unnecessary files.
 
-## Features
+## Features 🌟
 
 *   **Custom Cleaners:** A growing collection of XML files for various applications and system components.
 *   **Community Driven:** Contributions and suggestions for new cleaners are welcome.
