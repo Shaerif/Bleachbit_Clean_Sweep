@@ -1,1 +1,4 @@
 tkinter
+requests
+beautifulsoup4
+tqdm>=4.65.0

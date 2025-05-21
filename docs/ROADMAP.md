@@ -39,11 +39,20 @@ This document outlines the planned features and improvements for the Bleachbit C
 *   **Regular Updates:**
     *   Establish a schedule for reviewing and updating existing cleaners to ensure compatibility with new software versions.
 
-## Ideas Under Consideration
+## Ideas Under Consideration 🤔
 
 *   A simple GUI tool to help users manage their custom BleachBit cleaners.
 *   Integration with popular software update checkers to identify when new cleaner versions might be needed.
+*   **BleachBit Backup & Restore:** Implement functionality to backup and restore BleachBit settings, including selected checkboxes for cleaning operations.
+*   **Import/Export Checked Options:** Allow users to import and export their preferred cleaning configurations (checked checkboxes).
+*   **Auto-Update BleachBit:** ~~Develop a feature to automatically download and update BleachBit to the latest beta or stable versions.~~ Implemented an enhanced auto-update feature for BleachBit. This includes:
+    *   Ability to choose between **stable, beta, and unstable (CI builds)** versions for download.
+    *   Fetching the latest unstable builds directly from the BleachBit CI server (`https://ci.bleachbit.org/`).
+    *   A **debug mode** for the updater script, accessible via a GUI checkbox, to help with troubleshooting.
+*   **Portable Version Download:** Add an option to download a portable version of BleachBit.
+*   **Download Progress Bar:** Implement a visual progress bar for BleachBit downloads in the updater.
+*   **Enhanced Download Visualization & Debugging:** Improve the visual feedback during the download process and expand debugging capabilities for the updater.
 
-## [Updated] - 2025-05-20
+## [Updated] - 2025-05-21
 
 This roadmap is a living document and will be updated as the project evolves and based on community feedback.

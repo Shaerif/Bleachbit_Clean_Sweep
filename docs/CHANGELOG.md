@@ -5,11 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] - 2025-05-20
+## [Unreleased] - 2025-05-21
 ### Added ✨
 - Replaced `deploy_cleaners.ps1` with `deploy_cleaners.py` for cross-platform compatibility.
 - Added `cleaner_manager_gui.py` for managing custom cleaners.
 - Created `requirements.txt` for GUI tool dependencies.
+- Created `LICENSE` file with MIT License.
+- Added new feature requests to `ROADMAP.md`.
+- Enhanced `bleachbit_updater.py` and `cleaner_manager_gui.py`:
+    - Implemented selection for stable, beta, or unstable (CI) BleachBit versions.
+    - Added functionality to fetch the latest unstable builds from `https://ci.bleachbit.org/`.
+    - Integrated a debug mode toggle in the GUI for the updater script.
+- Added further feature ideas to `ROADMAP.md` (portable version, download progress bar, enhanced download visualization/debugging).
+
+### Changed 🔄
+- Moved `LICENSE` and `requirements.txt` to `docs` folder.
+- Added emojis to `README.md`, `ROADMAP.md`, and `CHANGELOG.md` for visual appeal.
 
 ### Date
 * 2023-10-12

@@ -42,4 +42,4 @@ This project is licensed under the [MIT License](LICENSE) (to be created).
 * **GUI Tool:** Added a simple GUI tool `cleaner_manager_gui.py` to help users manage custom BleachBit cleaners.
 * **Requirements File:** Created `requirements.txt` to list dependencies for the GUI tool.
 
-## [Updated] - 2025-05-20
+## [Updated] - 2025-05-21
